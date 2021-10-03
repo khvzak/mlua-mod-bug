@@ -1,0 +1,12 @@
+[package]
+name = "mlua-mod-bug"
+version = "0.1.0"
+edition = "2018"
+
+[workspace]
+members = [
+    "module",
+]
+
+[dependencies]
+mlua = { version = "0.6", features = ["luajit", "vendored", "async", "send", "macros"] }

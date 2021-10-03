@@ -1,0 +1,12 @@
+[package]
+name = "module"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+mlua = { version = "0.6", features = ["luajit", "module", "vendored", "async", "send"] }
+tokio = { version = "1", features = ["full"] }
+async-compat = "0.2"
